@@ -23,7 +23,9 @@ export default function Hero() {
               transition={{ duration: 0.6 }}
               className="text-4xl lg:text-5xl font-semibold leading-tight"
             >
-              Tire seu Visto conosco e <br />não tenha nenhuma <br />surpresa negativa!
+              Tire seu Visto conosco e<br />
+              não tenha nenhuma<br />
+              surpresa negativa!
             </motion.h1>
             <motion.div 
               initial={{ opacity: 0, width: 0 }}
@@ -104,23 +106,26 @@ export default function Hero() {
 
       {/* Right Side */}
       <div className="w-full lg:w-1/2 relative flex items-center justify-center p-6">
-        <Image
-          src="/Hero.png"
-          alt="Roda gigante e fonte"
-          width={900}
-          height={900}
-          className="rounded-3xl object-cover w-full h-auto"
-        />
-        <div className="absolute bottom-10 left-10 max-w-md text-white">
+        <div className="relative w-full h-full">
+          <Image
+            src="/Hero.png"
+            alt="Roda gigante e fonte"
+            width={900}
+            height={900}
+            className="rounded-3xl object-cover w-full h-full"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/70 to-transparent rounded-b-3xl" />
+        </div>
+        <div className="absolute bottom-16 left-12 max-w-xl text-white z-10">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-2xl font-bold"
+            className="text-4xl font-bold leading-tight mb-4"
           >
             Realize o seu sonho com <br /> a ajuda da Tirar Visto!
           </motion.h2>
-          <p className="mt-2 text-sm">
+          <p className="text-lg leading-relaxed">
             Com um serviço profissional, você não terá dor de cabeça para todo o processo do visto e entrevistas no consulado.
           </p>
         </div>
