@@ -6,11 +6,14 @@ import Link from 'next/link';
 import { Dialog } from '@headlessui/react';
 import { PlayCircle } from 'lucide-react';
 import Navbar from '../components/navbar';
+import ConsultoriaSection from '../components/ConsultoriaSection';
+import TouristSection from '../components/TouristSection';
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    <>
     <section className="flex flex-col lg:flex-row min-h-screen w-full bg-white text-black">
       {/* Left Side */}
       <div className="w-full lg:w-1/2 pl-12 pr-6 flex flex-col">
@@ -177,6 +180,9 @@ export default function Hero() {
           </Dialog>
         )}
       </AnimatePresence>
-    </section>
+      </section>
+      <ConsultoriaSection />
+      <TouristSection />
+    </>
   );
 }
