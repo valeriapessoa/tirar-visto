@@ -8,6 +8,7 @@ import { PlayCircle } from 'lucide-react';
 import Navbar from '../components/navbar';
 import ConsultoriaSection from '../components/ConsultoriaSection';
 import TouristSection from '../components/TouristSection';
+import DestinosSection from '../components/DestinosSection';
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -183,6 +184,7 @@ export default function Hero() {
       </section>
       <ConsultoriaSection />
       <TouristSection />
+      <DestinosSection />
     </>
   );
 }
