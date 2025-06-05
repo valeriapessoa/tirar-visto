@@ -108,8 +108,8 @@ const PacotesSection = () => {
   }
 
   return (
-    <section className="py-16 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-16 px-12 md:px-16 lg:px-20 bg-white">
+      <div className="w-full">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
           <div>
@@ -121,14 +121,14 @@ const PacotesSection = () => {
           <div className="flex space-x-3">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center text-gray-400 hover:border-gray-400 transition-colors disabled:opacity-50"
+              className="w-12 h-12 rounded-full border-2 border-gray-400 flex items-center justify-center text-gray-600 hover:border-gray-600 transition-colors disabled:opacity-50"
               disabled={currentSlide === 0}
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextSlide}
-              className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gray-700 transition-colors disabled:opacity-50"
+              className="w-12 h-12 rounded-full bg-gray-800 border-2 border-gray-800 flex items-center justify-center text-white hover:bg-gray-700 hover:border-gray-700 transition-colors disabled:opacity-50"
               disabled={currentSlide === totalSlides - 1}
             >
               <ChevronRight className="w-5 h-5" />
@@ -144,11 +144,11 @@ const PacotesSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden"
+              className="bg-white rounded-2xl shadow-md border-2 border-gray-200 overflow-hidden"
             >
               {/* Image - with border and spacing */}
               <div className="p-4">
-                <div className="h-72 relative w-full rounded-2xl overflow-hidden border border-gray-200">
+                <div className="h-72 sm:h-80 lg:h-72 xl:h-80 relative w-full rounded-2xl overflow-hidden border-2 border-gray-300">
                   <Image
                     src={pacote.image || "/placeholder.svg"}
                     alt={pacote.title}
@@ -166,7 +166,7 @@ const PacotesSection = () => {
                   <button className="px-3 py-1 border-2 border-gray-900 text-gray-900 text-sm font-medium rounded-full">
                     Basic
                   </button>
-                  <button className="px-3 py-1 border border-gray-300 text-gray-600 text-sm font-medium rounded-full">
+                  <button className="px-3 py-1 border-2 border-gray-400 text-gray-600 text-sm font-medium rounded-full">
                     Premium
                   </button>
                 </div>
@@ -177,24 +177,24 @@ const PacotesSection = () => {
                 {/* Two Column Details */}
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <div>
-                    <p className="text-sm font-medium text-black mb-1">Atendimento</p>
+                    <p className="text-sm font-medium text-gray-900 mb-1">Atendimento</p>
                     <p className="text-sm text-gray-600">{pacote.atendimento}</p>
                   </div>
                   <div>
-                    <p className="text-sm font-medium text-black mb-1">{pacote.id === 3 ? "Duration" : "Tempo"}</p>
+                    <p className="text-sm font-medium text-gray-900 mb-1">{pacote.id === 3 ? "Duration" : "Tempo"}</p>
                     <p className="text-sm text-gray-600">{pacote.tempo}</p>
                   </div>
                 </div>
 
                 {/* Divider Line */}
-                <div className="border-t border-gray-200 pt-6">
+                <div className="border-t-2 border-gray-300 pt-6">
                   {/* Price and Button */}
                   <div className="flex justify-between items-end">
                     <div>
                       <p className="text-sm text-gray-500 mb-1">A partir de</p>
                       <p className="text-2xl font-bold text-black">{pacote.preco}</p>
                     </div>
-                    <button className="bg-gray-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
+                    <button className="bg-gray-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors border-2 border-gray-900">
                       Contratar
                     </button>
                   </div>
