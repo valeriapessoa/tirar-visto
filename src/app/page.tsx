@@ -9,6 +9,7 @@ import Navbar from '../components/navbar';
 import ConsultoriaSection from '../components/ConsultoriaSection';
 import TouristSection from '../components/TouristSection';
 import DestinosSection from '../components/DestinosSection';
+import PacotesSection from '../components/PacotesSection';
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -185,6 +186,7 @@ export default function Hero() {
       <ConsultoriaSection />
       <TouristSection />
       <DestinosSection />
+      <PacotesSection />
     </>
   );
 }
