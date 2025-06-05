@@ -166,7 +166,7 @@ export default function Hero() {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/3fumBcKC6RE?autoplay=1"
+                  src="https://www.youtube.com/embed/mPFakMSvysM?autoplay=1"
                   title="Conheça a Bruna"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
