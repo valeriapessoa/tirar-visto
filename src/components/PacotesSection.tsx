@@ -194,7 +194,7 @@ const PacotesSection = () => {
                       <p className="text-sm text-gray-500 mb-1">A partir de</p>
                       <p className="text-2xl font-bold text-black">{pacote.preco}</p>
                     </div>
-                    <button className="bg-gray-900 text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors border-2 border-gray-900">
+                    <button className="bg-[#1B2543] text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-[#1a1f33] transition-colors border-2 border-[#1B2543]">
                       Contratar
                     </button>
                   </div>

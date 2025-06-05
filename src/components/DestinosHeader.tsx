@@ -19,7 +19,7 @@ export default function DestinosHeader({
   showButton = true,
 }: DestinosHeaderProps) {
   return (
-    <div className="relative pt-[110px] pb-16">
+    <div className="relative bg-white pt-[110px] pb-16">
         {/* Background Vectors */}
         <div className="absolute left-0 top-0">
             <Image

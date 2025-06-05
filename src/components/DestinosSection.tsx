@@ -38,7 +38,7 @@ export default function DestinosSection() {
   ]
 
   return (
-    <section className="relative w-full bg-gray-50 py-20">
+    <section className="relative w-full bg-white py-20">
 
       {/* Section Header */}
       <DestinosHeader
