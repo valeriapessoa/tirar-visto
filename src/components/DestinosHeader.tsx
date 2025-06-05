@@ -20,7 +20,6 @@ export default function DestinosHeader({
 }: DestinosHeaderProps) {
   return (
     <div className="relative bg-white pt-16 pb-8 sm:pt-20 sm:pb-12 md:pt-24 md:pb-16 lg:pt-[110px]">
-      {/* Background Vectors */}
       <div className="absolute left-0 top-0">
         <Image
           src="/vector-1.png"
@@ -63,24 +62,20 @@ export default function DestinosHeader({
       </div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Top Label */}
         <div className="mb-4 flex justify-center sm:mb-6">
           <span className="rounded-full bg-yellow-400 px-4 py-1.5 text-xs font-semibold text-black sm:px-6 sm:py-2 sm:text-sm">
             {badge}
           </span>
         </div>
 
-        {/* Title */}
         <h2 className="mb-4 text-center text-2xl font-bold leading-tight text-gray-900 sm:mb-6 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
           {title}
         </h2>
 
-        {/* Subtitle */}
         <p className="mx-auto mb-6 max-w-3xl text-center text-base leading-relaxed text-gray-600 sm:mb-8 sm:text-lg md:mb-10">
           {subtitle}
         </p>
 
-        {/* Button */}
         {showButton && (
           <div className="flex justify-center">
             <Link

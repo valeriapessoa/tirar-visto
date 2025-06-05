@@ -40,7 +40,6 @@ export default function DestinosSection() {
   return (
     <section className="relative w-full bg-white py-20">
 
-      {/* Section Header */}
       <DestinosHeader
         badge="Top Destinos"
         title="Destinos mais procurados"
@@ -49,7 +48,6 @@ export default function DestinosSection() {
         buttonHref="#"
       />
 
-      {/* Destinations Grid */}
       <div className="relative mx-auto max-w-7xl px-4 sm:px-8">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {destinations.map((destination) => {

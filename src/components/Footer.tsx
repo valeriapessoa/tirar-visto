@@ -1,13 +1,11 @@
 import Link from "next/link"
-import { ArrowUp } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
     <footer className="bg-white px-4 sm:px-6 lg:px-4 py-8 sm:py-12 lg:py-16">
       <div className="max-w-[95%] mx-auto">
-        {/* Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16">
-          {/* Left Section - Customer Service */}
           <div className="space-y-4 lg:space-y-6">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Está com alguma
@@ -24,18 +22,21 @@ export default function Footer() {
             </button>
           </div>
 
-          {/* Right Section - Newsletter (positioned lower) */}
           <div className="space-y-1 lg:pt-24 mt-8 lg:mt-0">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-gray-900">Receba novidades</h3>
+            <h3 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-gray-900">Receba novidades</h3>
             <div className="relative border-b border-gray-400 pb-1">
-              <ArrowUp className="absolute right-0 bottom-0 w-5 h-5 lg:w-6 lg:h-6 text-gray-900" />
+              <Image
+                src="/arrow-up.png"
+                alt="Seta para cima"
+                width={100}
+                height={100}
+                className="absolute right-0 bottom-0 w-11 h-11 lg:w-12 lg:h-12"
+              />
             </div>
           </div>
         </div>
 
-        {/* Social Media and Footer Links Section - Two Columns */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-16">
-          {/* Column 1 - Social Media (positioned to align with bottom of links) */}
           <div className="lg:pt-16 xl:pt-20 order-2 lg:order-1">
             <p className="text-gray-900 font-medium mb-4 lg:mb-6 text-sm lg:text-base">Siga em nossa redes:</p>
             <div className="flex flex-wrap gap-3 lg:gap-4">
@@ -74,7 +75,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2 - Footer Links (3 columns) */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 order-1 lg:order-2">
             {/* Empresa Column */}
             <div>
@@ -107,7 +107,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Novidades Column */}
             <div>
               <h4 className="font-bold text-gray-900 mb-4 lg:mb-6 text-sm lg:text-base">Novidades</h4>
               <div className="space-y-3 lg:space-y-4">
@@ -138,7 +137,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Suporte Column */}
             <div>
               <h4 className="font-bold text-gray-900 mb-4 lg:mb-6 text-sm lg:text-base">Suporte</h4>
               <div className="space-y-3 lg:space-y-4">
@@ -165,7 +163,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="text-center pt-6 lg:pt-8 border-t border-gray-300">
           <p className="text-gray-600 text-sm lg:text-base">© 2025 Tirar Visto - Todos os Direitos Reservados</p>
         </div>

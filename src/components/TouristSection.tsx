@@ -10,16 +10,13 @@ export default function TouristSection() {
   return (
     <section className="w-full bg-white py-8 px-6 sm:py-12 sm:px-12 lg:px-16 xl:px-20">
       <div className="w-full mx-auto">
-        {/* Header Button */}
         <div className="mb-6 sm:mb-8">
           <button className="bg-[#F6C010] hover:bg-[#E6B010] text-[#232323] font-medium py-2 px-6 rounded-full text-sm">
             Veja como funciona
           </button>
         </div>
 
-        {/* First Row - Title (smaller) and Description (larger) */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-16 mb-8 md:mb-12">
-          {/* Left Column - Title (2/5 of width - smaller) */}
           <div className="md:col-span-2">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#232323] leading-tight">
               Sua tranquilidade
@@ -28,7 +25,6 @@ export default function TouristSection() {
             </h1>
           </div>
 
-          {/* Right Column - Description (3/5 of width - larger) */}
           <div className="md:col-span-3 flex items-center">
             <p className="text-[#8D8D8D] text-sm leading-relaxed">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -39,9 +35,7 @@ export default function TouristSection() {
           </div>
         </div>
 
-        {/* Second Row - Image and Process Steps (aligned heights) */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-16 items-start">
-          {/* Left Column - Image */}
           <div className="order-1 md:order-none md:col-span-3">
             <div
               className="relative w-full h-80 sm:h-96 md:h-[450px] rounded-lg overflow-hidden bg-gray-100"
@@ -52,14 +46,11 @@ export default function TouristSection() {
                 backgroundRepeat: "no-repeat",
               }}
             >
-              {/* Imagem invisível para manter a acessibilidade */}
               <span className="sr-only">Família feliz no aeroporto com passaportes</span>
             </div>
           </div>
 
-          {/* Right Column - Process Steps (with top padding like in layout) */}
           <div className="order-2 md:order-none md:col-span-2 pt-4 md:pt-6 h-64 sm:h-72 md:h-[450px] flex flex-col justify-between">
-            {/* Etapa Inicial */}
             <div className="flex-1">
               <h2 className="text-xl sm:text-2xl font-bold text-[#232323] mb-2 md:mb-3">Etapa Inicial</h2>
               <p className="text-[#8D8D8D] text-sm leading-relaxed">
@@ -67,10 +58,8 @@ export default function TouristSection() {
               </p>
             </div>
 
-            {/* Divider Line - Thicker */}
             <hr className="border-t-2 border-gray-200 my-4" />
 
-            {/* Processo de Entrevista */}
             <div className="flex-1">
               <h2 className="text-xl sm:text-2xl font-bold text-[#232323] mb-2 md:mb-3">Processo de Entrevista</h2>
               <button
@@ -92,10 +81,8 @@ export default function TouristSection() {
               )}
             </div>
 
-            {/* Divider Line - Thicker */}
             <hr className="border-t-2 border-gray-200 my-4" />
 
-            {/* Entrega de Documentos */}
             <div className="flex-1">
               <h2 className="text-xl sm:text-2xl font-bold text-[#232323] mb-2 md:mb-3">Entrega de Documentos</h2>
               <button
@@ -117,7 +104,6 @@ export default function TouristSection() {
               )}
             </div>
 
-            {/* Divider Line - Thicker */}
             <hr className="border-t-2 border-gray-200 my-4" />
           </div>
         </div>
