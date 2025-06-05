@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Dialog } from '@headlessui/react';
-import { PlayCircle } from 'lucide-react';
 import Navbar from '../components/navbar';
 import ConsultoriaSection from '../components/ConsultoriaSection';
 import TouristSection from '../components/TouristSection';

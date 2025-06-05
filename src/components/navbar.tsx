@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,13 +24,12 @@ export default function Navbar() {
       <div className="w-full max-w-7xl mx-auto py-3">
         <div className="flex items-center">
           <div className="relative w-24 h-12 md:w-32 md:h-14 lg:w-40 lg:h-16">
-            <img 
+            <Image 
               src="/logo.png" 
               alt="Tirar Visto" 
               className="w-full h-full object-contain object-left"
               width={160}
               height={64}
-              loading="eager"
             />
           </div>
           
