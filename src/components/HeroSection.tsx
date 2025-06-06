@@ -11,7 +11,6 @@ export default function HeroSection() {
 
   return (
     <section className="flex flex-col lg:flex-row min-h-screen w-full bg-white text-black">
-      {/* Left Side */}
       <div className="w-full lg:w-1/2 pl-12 pr-6 flex flex-col">
         <Navbar />
         <div className="flex-1 flex flex-col justify-start pt-12 pb-16">
@@ -35,7 +34,6 @@ export default function HeroSection() {
           </div>
 
           <div className="flex flex-col md:flex-row gap-8">
-            {/* Coluna 1 */}
             <div className="md:w-1/2 flex flex-col">
               <motion.p
                 initial={{ opacity: 0 }}
@@ -58,7 +56,6 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Coluna 2 */}
             <div className="md:w-1/2 flex items-center justify-center md:justify-end md:items-start md:pt-32 pr-10">
               <motion.button
                 onClick={() => setIsOpen(true)}
@@ -103,7 +100,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Right Side */}
       <div className="w-full lg:w-1/2 relative flex items-center justify-center p-6">
         <div className="relative w-full h-full">
           <Image
@@ -137,7 +133,6 @@ export default function HeroSection() {
         </motion.a>
       </div>
 
-      {/* Modal de Vídeo */}
       <AnimatePresence>
         {isOpen && (
           <Dialog as={motion.div} static open={isOpen} onClose={() => setIsOpen(false)} className="fixed inset-0 z-50 flex items-center justify-center">

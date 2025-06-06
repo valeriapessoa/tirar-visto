@@ -33,7 +33,6 @@ export default function Navbar() {
             />
           </div>
           
-          {/* Desktop Menu */}
           <nav className="hidden md:flex items-center justify-between ml-12 flex-1">
             {navLinks.map(({ label, href }) => (
               <Link 
@@ -52,7 +51,6 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Mobile Icon */}
           <button
             onClick={toggleMenu}
             className="md:hidden text-black focus:outline-none ml-auto"
@@ -62,7 +60,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <AnimatePresence>
           {isOpen && (
             <motion.nav

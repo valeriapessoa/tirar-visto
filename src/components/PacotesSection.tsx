@@ -146,7 +146,6 @@ const PacotesSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white rounded-2xl shadow-md border-2 border-gray-200 overflow-hidden"
             >
-              {/* Image - with border and spacing */}
               <div className="p-4">
                 <div className="h-72 sm:h-80 lg:h-72 xl:h-80 relative w-full rounded-2xl overflow-hidden border-2 border-gray-300">
                   <Image
@@ -159,9 +158,7 @@ const PacotesSection = () => {
                 </div>
               </div>
 
-              {/* Content */}
               <div className="p-6">
-                {/* Tags */}
                 <div className="flex space-x-3 mb-6">
                   <button className="px-3 py-1 border-2 border-gray-900 text-gray-900 text-sm font-medium rounded-full">
                     Basic
@@ -171,10 +168,8 @@ const PacotesSection = () => {
                   </button>
                 </div>
 
-                {/* Title */}
                 <h3 className="text-2xl font-bold text-black mb-6">{pacote.title}</h3>
 
-                {/* Two Column Details */}
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <div>
                     <p className="text-sm font-medium text-gray-900 mb-1">Atendimento</p>
@@ -186,9 +181,7 @@ const PacotesSection = () => {
                   </div>
                 </div>
 
-                {/* Divider Line */}
                 <div className="border-t-2 border-gray-300 pt-6">
-                  {/* Price and Button */}
                   <div className="flex justify-between items-end">
                     <div>
                       <p className="text-sm text-gray-500 mb-1">A partir de</p>
